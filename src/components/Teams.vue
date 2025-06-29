@@ -1,14 +1,16 @@
 <template>
-  <div class="main-content-area">
+<div class="main-content-area">
     <v-combobox
       v-model="searchQuery"
       class="search-input"
       label="Введите или выберите команду"
       variant="outlined"
       color="success"
-      :items="teams.map(t => t.name)"
+      :items="teams.map(l => l.name)"
       prepend-inner-icon="mdi-soccer"
-      @input="onSearchInput"
+      density="compact"
+      hide-details
+      @update:modelValue="onSearchInput"
     />
 
     <v-progress-circular v-if="isLoading" class="loader" color="primary" indeterminate />

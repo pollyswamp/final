@@ -1,5 +1,5 @@
 <template>
-  <div class="main-content-area">
+<div class="main-content-area">
     <v-combobox
       v-model="searchQuery"
       class="search-input"
@@ -8,7 +8,9 @@
       color="success"
       :items="leagues.map(l => l.name)"
       prepend-inner-icon="mdi-soccer"
-      @input="onSearchInput"
+      density="compact"
+      hide-details
+      @update:modelValue="onSearchInput"
     />
 
     <v-progress-circular v-if="isLoading" class="loader" color="primary" indeterminate />
