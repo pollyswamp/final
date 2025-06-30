@@ -3,9 +3,8 @@
   "private": false,
   "type": "module",
   "version": "0.1.0",
-  "homepage": "https://fenra73.github.io/test-vue/",
   "scripts": {
-    "dev": "vite",
+    "server": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix",
