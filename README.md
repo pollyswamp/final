@@ -2,4 +2,4 @@
 npm install gh-pages@latest
 
 <!-- Запуск проекта -->
-npm run dev
+npm run server
